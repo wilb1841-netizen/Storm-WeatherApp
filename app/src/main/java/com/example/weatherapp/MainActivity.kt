@@ -86,6 +86,7 @@ fun WeatherScreen() {
     var feedbackResult by remember { mutableStateOf("") }
     // CACHE
     var recentSearches by remember { mutableStateOf(listOf<String>())}
+    var feedbackLoading by remember { mutableStateOf(false) }
 
     val scope = rememberCoroutineScope()
     val context = LocalContext.current
